@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout"
+    android:weightSum="3"
+    tools:context=".RegisterFragment">
+
+
+    <include layout="@layout/toolbar_layout"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingTop="5dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="10dp"
+        android:weightSum="11">
+
+        <TextView
+            android:id="@+id/signin_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Sign Up"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userName_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Username"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/userNameR_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="example123"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/email_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Email"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/emailR_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="example@gmail.com"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pass_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Password"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/passR_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/verifypass_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Verify Password"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/verifyRpass_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Verify Password"
+            android:inputType="textPassword"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/Location_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="City"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/location_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Montreal"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/gender_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Gender"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:id="@+id/gender_spiner"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:layout_weight="1"
+
+            />
+        <TextView
+            android:id="@+id/birthday_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Birthdate"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/birthdate_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="01/01/2021"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart"
+            android:textSize="16sp" />
+
+
+
+
+
+
+        <Button
+            android:id="@+id/signUpR_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Continue"
+            android:textColor="#000000"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="17sp"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
